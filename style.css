@@ -1,0 +1,74 @@
+#superior{
+    position: absolute;
+    width: 100%;
+    
+}
+/*#titulo{
+    background: #B1D4E0;
+    position: relative;
+    width: 245px;
+    height: 242px;
+    float: right;
+}
+#imagenPerfil{
+    padding-left: 45px;
+    padding-top: 26px;
+    width: 156px;
+    height: 188px;
+    
+}*/
+
+
+
+/*#burbujas div{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #454545;
+    position: absolute;
+    bottom: 0;
+    animation: animarburbujas 10s linear infinite;
+}*/
+
+
+#burbujas {
+    width: 200px;
+    height: 200px;
+    background-color: #001aff; /* Color inicial */
+    position: absolute;
+    top: 0%;
+    transform: translate(50%, 50%);
+    border-radius: 50%;
+    animation: float 20s infinite, changeColor 20s infinite;
+  }
+  
+@keyframes float {
+  0% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: translateY(750px);
+  }
+  100% {
+    transform: translateY(-25%);
+  }
+}
+  
+@keyframes changeColor {
+  0% {
+    background-color: #0044ff; /* Color inicial */
+  }
+  25% {
+    background-color: #0026ff; /* Cambio de color */
+  }
+  50% {
+    background-color: #0400ff; /* Vuelve al color inicial */
+  }
+  75%{
+    background-color: #2600ff; /* Cambio de color */
+  }
+  100% {
+    background-color: #5900ff; /* Vuelve al color inicial */
+  }
+}
+
